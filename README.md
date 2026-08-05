@@ -25,6 +25,7 @@ alaninda bu adresler kullanilir.
 | Uygulama | Paket adi | URL |
 |---|---|---|
 | Dogum Gunu Takibi | `com.ncosy.birthdaylist` | https://ncosy.github.io/privacy/birthday-tracker/ |
+| Kac Gun Kaldi - Gun Sayaci | `com.ncosy.mysayac` | https://ncosy.github.io/privacy/days-left-countdown/ |
 
 ## Yeni uygulama eklemek
 
