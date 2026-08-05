@@ -26,6 +26,8 @@ alaninda bu adresler kullanilir.
 |---|---|---|
 | Dogum Gunu Takibi | `com.ncosy.birthdaylist` | https://ncosy.github.io/privacy/birthday-tracker/ |
 | Kac Gun Kaldi - Gun Sayaci | `com.ncosy.mysayac` | https://ncosy.github.io/privacy/days-left-countdown/ |
+| Kac Gun Oldu | `com.ncosy.kacgun` | https://ncosy.github.io/privacy/days-since-counter/ |
+| Evet Hayir | `com.evethayirduz` | https://ncosy.github.io/privacy/yes-no-decider/ |
 
 ## Yeni uygulama eklemek
 
