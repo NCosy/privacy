@@ -28,6 +28,10 @@ alaninda bu adresler kullanilir.
 | Kac Gun Kaldi - Gun Sayaci | `com.ncosy.mysayac` | https://ncosy.github.io/privacy/days-left-countdown/ |
 | Kac Gun Oldu | `com.ncosy.kacgun` | https://ncosy.github.io/privacy/days-since-counter/ |
 | Evet Hayir | `com.evethayirduz` | https://ncosy.github.io/privacy/yes-no-decider/ |
+| Karar Carki | `com.evethayircark` | https://ncosy.github.io/privacy/decision-wheel/ |
+| Mizika | `com.charmonicam` | https://ncosy.github.io/privacy/harmonica/ |
+| Notlarim | `com.mynotesapp` | https://ncosy.github.io/privacy/my-notes/ |
+| Harcama Takibi | `ncosy.harcamalistesi` | https://ncosy.github.io/privacy/expense-tracker/ |
 
 ## Yeni uygulama eklemek
 
