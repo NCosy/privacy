@@ -32,7 +32,7 @@ alaninda bu adresler kullanilir.
 | Mizika | `com.charmonicam` | https://ncosy.github.io/privacy/harmonica/ |
 | Notlarim | `com.mynotesapp` | https://ncosy.github.io/privacy/my-notes/ |
 | Harcama Takibi | `ncosy.harcamalistesi` | https://ncosy.github.io/privacy/expense-tracker/ |
-| Paradar | `com.yunusyardim.paradar` | https://ncosy.github.io/privacy/paradar/ |
+| Paradar | `com.letworktech.paradar` | https://ncosy.github.io/privacy/paradar/ |
 
 ## Yeni uygulama eklemek
 
