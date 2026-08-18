@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hesap ve Veri Silme — Paradar</title>
+<meta name="description" content="Paradar (Letwork Tech) uygulamasında hesabınızı ve verilerinizi nasıl silersiniz.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a2e;
+    --muted: #5b6072;
+    --line: #e4e6ef;
+    --accent: #0f9d6b;
+    --card: #eefaf5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10161b;
+      --fg: #f2f5f7;
+      --muted: #a6b3be;
+      --line: #273540;
+      --accent: #34d399;
+      --card: #1f2a34;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header {
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 2.5rem;
+  }
+  .badge {
+    display: inline-block;
+    font-size: .8rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: .6rem;
+  }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .6rem; }
+  h2 {
+    font-size: 1.25rem;
+    margin: 2.6rem 0 .8rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--line);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  h3 { font-size: 1.02rem; margin: 1.6rem 0 .5rem; }
+  .meta { color: var(--muted); font-size: .92rem; margin: 0; }
+  .lede { color: var(--muted); font-size: 1.02rem; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  code {
+    background: var(--card);
+    padding: .12em .4em;
+    border-radius: 4px;
+    font-size: .9em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  .callout {
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.15rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.4rem 0;
+  }
+  .callout p { margin: 0; }
+  .tablewrap { overflow-x: auto; margin: 1.2rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: .93rem; }
+  th, td { text-align: left; padding: .65rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); font-size: .82rem; text-transform: uppercase; letter-spacing: .04em; }
+  .langnav { margin: 1.6rem 0 0; font-size: .95rem; }
+  .langnav a { margin-right: 1rem; }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+  hr.sep { border: 0; border-top: 1px solid var(--line); margin: 4rem 0 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="badge">Paradar · Letwork Tech</div>
+  <h1>Hesap ve Veri Silme</h1>
+  <p class="meta">Uygulama kimliği: <code>com.letworktech.paradar</code><br>
+  Son güncelleme: 18 Ağustos 2026</p>
+  <p class="langnav"><a href="#tr">Türkçe</a> <a href="#en">English</a></p>
+</header>
+
+<section id="tr">
+
+<p class="lede">Bu sayfa, <strong>Letwork Tech</strong> tarafından yayınlanan <strong>Paradar</strong> uygulamasında hesabınızı ve verilerinizi nasıl sileceğinizi anlatır.</p>
+
+<div class="callout">
+  <p><strong>Önce şunu bilin:</strong> Paradar hesap açmadan da tam olarak çalışır. Hesabınız yoksa sunucuda hiçbir veriniz yok demektir; uygulamayı kaldırmanız her şeyi silmeye yeter.</p>
+</div>
+
+<h2>1. Hesabınızı silme (uygulama içinden)</h2>
+
+<p>En hızlı yol budur ve işlem anında tamamlanır:</p>
+
+<ol>
+  <li>Paradar'ı açın</li>
+  <li>Alt menüden <strong>Daha</strong> sekmesine gidin</li>
+  <li><strong>Hesap</strong> bölümünü bulun</li>
+  <li><strong>Hesabı sil</strong>'e dokunun</li>
+  <li>Çıkan uyarıyı okuyup <strong>Kalıcı olarak sil</strong>'i onaylayın</li>
+</ol>
+
+<h2>2. Hesabınızı silme (e-posta ile)</h2>
+
+<p>Uygulamaya erişiminiz yoksa (telefonunuzu kaybettiyseniz, uygulamayı kaldırdıysanız) silme talebinizi e-posta ile iletebilirsiniz:</p>
+
+<p><a href="mailto:omyardim@gmail.com?subject=Paradar%20hesap%20silme%20talebi">omyardim@gmail.com</a></p>
+
+<p>Kayıtlı olduğunuz e-posta adresinden yazın; kimliğinizi doğrulamak için gereken tek şey budur. Talepler <strong>en geç 30 gün içinde</strong> sonuçlandırılır ve sonuç size bildirilir.</p>
+
+<h2>3. Hesabınızı silmeden veri silme</h2>
+
+<p>Hesabınızı kapatmadan da verilerinizi silebilirsiniz:</p>
+
+<ul>
+  <li><strong>Tek tek kayıtlar:</strong> Herhangi bir harcama, gelir, hesap ya da düzenli kuralı uygulama içinden silebilirsiniz. Bulut yedeğiniz açıksa bu silme sunucuya da yansır.</li>
+  <li><strong>Yedeklemeyi durdurma:</strong> <em>Daha → Bulut yedek</em> altındaki anahtarı kapatarak yeni verilerinizin sunucuya gönderilmesini durdurabilirsiniz.</li>
+  <li><strong>Yalnızca buluttaki veriler:</strong> Hesabınız açık kalsın ama sunucudaki kayıtlarınız silinsin isterseniz yukarıdaki adrese yazmanız yeterlidir.</li>
+</ul>
+
+<h2>4. Ne siliniyor, ne kalıyor</h2>
+
+<div class="tablewrap">
+<table>
+  <thead>
+    <tr><th>Veri</th><th>Hesap silindiğinde</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>E-posta adresiniz ve hesabınız</td><td>Kalıcı olarak silinir</td></tr>
+    <tr><td>Buluttaki tüm finansal kayıtlarınız (hesaplar, borçlar, gelir-gider, düzenli kurallar, yatırım ve ticaret kayıtları)</td><td>Kalıcı olarak silinir</td></tr>
+    <tr><td>Telefonunuzdaki kayıtlar</td><td><strong>Silinmez</strong> — cihazınızda kalır, uygulama çevrimdışı çalışmaya devam eder. Silmek için uygulamayı kaldırın veya <em>Ayarlar → Uygulamalar → Paradar → Depolama → Verileri temizle</em> yapın.</td></tr>
+    <tr><td>Reklam verileri (Google AdMob)</td><td>Google'ın kendi saklama politikalarına tabidir; silme talepleri Google'a iletilmelidir.</td></tr>
+    <tr><td>Satın alma kayıtları</td><td>Google Play ve RevenueCat tarafından yasal saklama süreleri boyunca tutulur.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p><strong>Ek saklama süresi yoktur.</strong> Hesabınızı uygulama içinden sildiğinizde sunucudaki kayıtlarınız beklemeye alınmaz, anında ve kalıcı olarak silinir. Yedeklerden geri getirilemez.</p>
+
+<div class="callout">
+  <p><strong>Aboneliğiniz ayrıdır.</strong> Hesabı silmek Pro aboneliğinizi durdurmaz. Aboneliği Google Play hesabınızın <em>Abonelikler</em> bölümünden ayrıca iptal etmeniz gerekir.</p>
+</div>
+
+<h2>5. Sorularınız için</h2>
+
+<p><a href="mailto:omyardim@gmail.com">omyardim@gmail.com</a></p>
+
+<p><a href="../">← Paradar gizlilik politikası</a></p>
+
+</section>
+
+<hr class="sep">
+
+<section id="en" lang="en">
+
+<header style="border-bottom:0;padding-bottom:0;margin-bottom:1.5rem;">
+  <h1>Account &amp; Data Deletion</h1>
+  <p class="meta">Application ID: <code>com.letworktech.paradar</code><br>
+  Last updated: August 18, 2026</p>
+</header>
+
+<p class="lede">This page explains how to delete your account and data in <strong>Paradar</strong>, published by <strong>Letwork Tech</strong>.</p>
+
+<div class="callout">
+  <p><strong>First things first:</strong> Paradar works fully without an account. If you never created one, you have no data on our servers — uninstalling the app removes everything.</p>
+</div>
+
+<h2>1. Deleting your account (in the app)</h2>
+
+<p>This is the fastest route and completes immediately:</p>
+
+<ol>
+  <li>Open Paradar</li>
+  <li>Go to the <strong>More</strong> tab in the bottom navigation</li>
+  <li>Find the <strong>Account</strong> section</li>
+  <li>Tap <strong>Delete account</strong></li>
+  <li>Read the warning and confirm <strong>Delete permanently</strong></li>
+</ol>
+
+<h2>2. Deleting your account (by email)</h2>
+
+<p>If you no longer have access to the app (lost phone, uninstalled), you can request deletion by email:</p>
+
+<p><a href="mailto:omyardim@gmail.com?subject=Paradar%20account%20deletion%20request">omyardim@gmail.com</a></p>
+
+<p>Write from the email address you registered with; that is all that is needed to verify you. Requests are completed <strong>within 30 days at the latest</strong> and the outcome is confirmed to you.</p>
+
+<h2>3. Deleting data without deleting your account</h2>
+
+<ul>
+  <li><strong>Individual records:</strong> You can delete any expense, income, account, or recurring rule from within the app. If cloud backup is on, the deletion propagates to the server.</li>
+  <li><strong>Stop backing up:</strong> Turn off the switch under <em>More → Cloud backup</em> to stop sending new data to the server.</li>
+  <li><strong>Cloud data only:</strong> If you want to keep your account but erase your server-side records, just write to the address above.</li>
+</ul>
+
+<h2>4. What is deleted, what remains</h2>
+
+<div class="tablewrap">
+<table>
+  <thead>
+    <tr><th>Data</th><th>When the account is deleted</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Your email address and account</td><td>Permanently deleted</td></tr>
+    <tr><td>All financial records in the cloud (accounts, debts, income and expenses, recurring rules, investment and trading records)</td><td>Permanently deleted</td></tr>
+    <tr><td>Records on your phone</td><td><strong>Not deleted</strong> — they stay on your device and the app keeps working offline. To remove them, uninstall the app or use <em>Settings → Apps → Paradar → Storage → Clear data</em>.</td></tr>
+    <tr><td>Advertising data (Google AdMob)</td><td>Subject to Google's own retention policies; deletion requests must be directed to Google.</td></tr>
+    <tr><td>Purchase records</td><td>Retained by Google Play and RevenueCat for their statutory retention periods.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p><strong>There is no additional retention period.</strong> When you delete your account from within the app, your server-side records are not held in a grace period — they are removed immediately and permanently, and cannot be restored from backups.</p>
+
+<div class="callout">
+  <p><strong>Your subscription is separate.</strong> Deleting your account does not cancel your Pro subscription. You must cancel it from the <em>Subscriptions</em> section of your Google Play account.</p>
+</div>
+
+<h2>5. Questions</h2>
+
+<p><a href="mailto:omyardim@gmail.com">omyardim@gmail.com</a></p>
+
+<p><a href="../">← Paradar privacy policy</a></p>
+
+</section>
+
+<footer>
+  <p>Paradar · <code>com.letworktech.paradar</code> · Letwork Tech</p>
+  <p><a href="../../">← Tüm gizlilik politikaları / All privacy policies</a></p>
+</footer>
+
+</div>
+</body>
+</html>

@@ -17,8 +17,26 @@ alaninda bu adresler kullanilir.
 /
 ├── index.html                    # Uygulama listesi
 └── <uygulama-slug>/
-    └── index.html                # O uygulamanin politikasi (TR + EN)
+    ├── index.html                # O uygulamanin politikasi (TR + EN)
+    └── hesap-silme/
+        └── index.html            # Hesap silme sayfasi (yalnizca hesap
+                                  # olusturmaya izin veren uygulamalarda)
 ```
+
+### Hesap silme sayfasi ne zaman gerekli
+
+Google Play, kullanicilarin hesap olusturabildigi uygulamalarda **web
+uzerinden erisilebilir bir hesap silme sayfasi** sart kosuyor. URL, Play
+Console > Uygulama icerigi > Veri guvenligi bolumunde isteniyor ve magaza
+girisinde gosteriliyor.
+
+Sayfa su ucunu birden karsilamali:
+
+- Magaza girisindeki uygulama veya gelistirici adina atifta bulunmali
+- Silme adimlarini belirgin sekilde gostermeli
+- Silinen ve saklanan veri turlerini, ek saklama surelerini yazmali
+
+Ornek: `paradar/hesap-silme/`
 
 ## Yayindaki politikalar
 
