@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Paradar</title>
+<meta name="description" content="Paradar (com.yunusyardim.paradar) uygulamasının gizlilik politikası / Privacy Policy.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a2e;
+    --muted: #5b6072;
+    --line: #e4e6ef;
+    --accent: #0f9d6b;
+    --card: #eefaf5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10161b;
+      --fg: #f2f5f7;
+      --muted: #a6b3be;
+      --line: #273540;
+      --accent: #34d399;
+      --card: #1f2a34;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header {
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 2.5rem;
+  }
+  .badge {
+    display: inline-block;
+    font-size: .8rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: .6rem;
+  }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .6rem; }
+  h2 {
+    font-size: 1.25rem;
+    margin: 2.6rem 0 .8rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--line);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  h3 { font-size: 1.02rem; margin: 1.6rem 0 .5rem; }
+  .meta { color: var(--muted); font-size: .92rem; margin: 0; }
+  .lede { color: var(--muted); font-size: 1.02rem; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  code {
+    background: var(--card);
+    padding: .12em .4em;
+    border-radius: 4px;
+    font-size: .9em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  .callout {
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.15rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.4rem 0;
+  }
+  .callout p { margin: 0; }
+  .tablewrap { overflow-x: auto; margin: 1.2rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: .93rem; }
+  th, td { text-align: left; padding: .65rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); font-size: .82rem; text-transform: uppercase; letter-spacing: .04em; }
+  .langnav { margin: 1.6rem 0 0; font-size: .95rem; }
+  .langnav a { margin-right: 1rem; }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+  hr.sep { border: 0; border-top: 1px solid var(--line); margin: 4rem 0 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="badge">Paradar</div>
+  <h1>Gizlilik Politikası</h1>
+  <p class="meta">Uygulama kimliği: <code>com.yunusyardim.paradar</code><br>
+  Son güncelleme: 18 Ağustos 2026</p>
+  <p class="langnav"><a href="#tr">Türkçe</a> <a href="#en">English</a></p>
+</header>
+
+<section id="tr">
+
+<p class="lede">Paradar; gelir, gider, borç ve yatırımlarınızı kaydedip önümüzdeki günlerde paranızın nasıl seyredeceğini gösteren bir mobil uygulamadır. Bu politika, uygulamanın verilerinizi nasıl ele aldığını açıklar.</p>
+
+<div class="callout">
+  <p><strong>Özet:</strong> Finansal kayıtlarınız varsayılan olarak yalnızca kendi cihazınızda saklanır. Uygulamayı hesap açmadan kullanabilirsiniz. Verileriniz sunucuya <em>yalnızca</em> Pro aboneliğiniz varsa <em>ve</em> bulut yedeği kendiniz açtıysanız gönderilir. Banka hesaplarınıza hiçbir şekilde bağlanmayız; tüm kayıtlar sizin elle girdiğiniz bilgilerdir.</p>
+</div>
+
+<h2>1. Cihazınızda sakladığımız veriler</h2>
+
+<p>Uygulamaya girdiğiniz bilgiler cihazınızın kendi depolama alanındaki bir veritabanında (SQLite) tutulur:</p>
+<ul>
+  <li>Hesap ve borç bilgileri: ad, tür, bakiye, son ödeme günü, kredi taksit planı</li>
+  <li>Gelir ve gider kayıtları: tutar, tarih, açıklama, kategori</li>
+  <li>Düzenli gelir ve giderler (kira, fatura, maaş, taksit gibi)</li>
+  <li>Yatırım pozisyonları ve alım-satım kayıtları</li>
+  <li>Uygulama tercihleri ve abonelik durumu</li>
+</ul>
+
+<div class="callout">
+  <p><strong>Banka entegrasyonu yoktur.</strong> Uygulama hiçbir bankaya, ödeme kuruluşuna veya finansal hizmete bağlanmaz. Kart numarası, banka giriş bilgisi veya hesap özeti istemez ve okumaz. Ekranda gördüğünüz her rakam sizin elle girdiğiniz bilgidir.</p>
+</div>
+
+<p>Bulut yedeğini açmadığınız sürece bu veriler <strong>cihazınızdan hiçbir zaman dışarı çıkmaz</strong>. Uygulamayı kaldırdığınızda veritabanı da silinir.</p>
+
+<h2>2. Hesap oluşturma (isteğe bağlı)</h2>
+
+<p>Uygulamayı hesap açmadan, tüm temel özellikleriyle kullanabilirsiniz. Hesap yalnızca iki şey için gereklidir:</p>
+<ul>
+  <li>Aboneliğinizin telefonlar arasında taşınması (Android'de aldığınız aboneliğin iPhone'unuzda da geçerli olması)</li>
+  <li>Bulut yedeğinin açılabilmesi</li>
+</ul>
+
+<p>Hesap açtığınızda saklanan tek kişisel bilgi <strong>e-posta adresinizdir</strong>. Parolanız sunucuda geri döndürülemez biçimde şifrelenmiş (hash) olarak tutulur; ne tarafımızca ne de başkası tarafından görülebilir. Kimlik doğrulama altyapısı <strong>Supabase</strong> tarafından sağlanır.</p>
+
+<h2>3. Bulut yedeği (isteğe bağlı ve Pro'ya özel)</h2>
+
+<p>Bulut yedeği <strong>iki koşul birden</strong> sağlanmadıkça çalışmaz:</p>
+<ol>
+  <li>Aktif bir Pro aboneliğiniz olmalı</li>
+  <li>Uygulama içinden yedeği <strong>kendiniz açmış</strong> olmalısınız</li>
+</ol>
+
+<p>Ücretsiz kullanıcıların finansal verileri hiçbir koşulda sunucuya gönderilmez. Pro aboneliğiniz olsa dahi yedeği açmadığınız sürece verileriniz cihazınızda kalır.</p>
+
+<p>Yedeği açtığınızda şu kayıtlar hesabınıza kopyalanır: defterler, hesaplar ve borçlar, kategoriler, gelir-gider hareketleri, düzenli kurallar, ödeme takvimi, yatırım pozisyonları ve alım-satım kayıtları.</p>
+
+<p>Şunlar <strong>hiçbir zaman</strong> sunucuya gönderilmez: piyasa fiyatları, enflasyon verisi ve cihaza özel ayarlar.</p>
+
+<p>Sunucudaki verileriniz, veritabanı düzeyinde satır bazlı güvenlik (Row Level Security) ile korunur: her kullanıcı yalnızca kendi satırlarına erişebilir. Veriler Supabase Inc. altyapısında barındırılır ve Türkiye dışındaki sunucularda tutulabilir. Aktarım TLS ile şifrelenir.</p>
+
+<h2>4. Abonelik</h2>
+
+<p>Pro aboneliği Google Play üzerinden satın alınır. Ödeme bilgilerinizi (kart numarası vb.) uygulama görmez ve saklamaz; ödeme tamamen Google tarafından yürütülür.</p>
+
+<p>Abonelik durumunun takibi için <strong>RevenueCat</strong> hizmeti kullanılır. RevenueCat'e iletilen bilgiler: satın alma makbuzu bilgileri, abonelik başlangıç/bitiş tarihi, cihaz ve uygulama sürümü ile —giriş yaptıysanız— hesabınıza ait kullanıcı kimliği. Bu kimlik, aboneliğinizin farklı telefonlarda tanınabilmesi için gereklidir.</p>
+
+<h2>5. İzinler</h2>
+
+<div class="tablewrap">
+<table>
+  <thead>
+    <tr><th>İzin</th><th>Ne için</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Reklamların yüklenmesi, abonelik doğrulaması ve (açtıysanız) bulut yedeği</td></tr>
+    <tr><td><code>AD_ID</code> ve reklam hizmetleri izinleri</td><td>Google AdMob'un reklam kimliğine erişmesi</td></tr>
+    <tr><td><code>BILLING</code></td><td>Google Play üzerinden abonelik satın alma</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Uygulama; rehberinize, konumunuza, kameranıza, fotoğraflarınıza, mikrofonunuza, takviminize veya dosyalarınıza erişmez.</p>
+
+<h2>6. Reklamlar ve üçüncü taraf veri toplama</h2>
+
+<p>Uygulama ücretsiz sürümde <strong>Google AdMob</strong> aracılığıyla reklam gösterir. Pro aboneleri reklam görmez. Google Mobile Ads SDK, reklamları sunmak ve ölçmek için kendisi veri toplar. Google'ın resmî açıklamasına göre toplanan ve paylaşılan veriler şunlardır:</p>
+
+<div class="tablewrap">
+<table>
+  <thead>
+    <tr><th>Veri türü</th><th>Açıklama</th><th>Amaç</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>IP adresi</td><td>Cihazın genel konumunun tahmin edilmesinde kullanılabilir</td><td>Reklamcılık, analiz, dolandırıcılık önleme</td></tr>
+    <tr><td>Ürün etkileşimleri</td><td>Reklamların görüntülenmesi ve tıklanması gibi etkileşimler</td><td>Reklamcılık, analiz, dolandırıcılık önleme</td></tr>
+    <tr><td>Tanılama bilgileri</td><td>Uygulama açılış süresi, takılma oranı, enerji kullanımı gibi performans verileri</td><td>Analiz, hata ayıklama</td></tr>
+    <tr><td>Reklam kimliği (Advertising ID)</td><td>Cihaza atanan, sıfırlanabilir reklam tanımlayıcısı</td><td>Reklamcılık, analiz</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p><strong>Finansal kayıtlarınız reklam ağıyla paylaşılmaz.</strong> AdMob'un girdiğiniz tutarlara, hesaplarınıza veya harcama kategorilerinize erişimi yoktur.</p>
+
+<p>Avrupa Birliği ve Birleşik Krallık'taki kullanıcılara reklam gösterilmeden önce Google'ın onay çerçevesi (UMP) üzerinden izin sorulur. Ayrıntılar için <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a> ve <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob veri kullanımı</a> sayfalarına bakabilirsiniz.</p>
+
+<h3>Reklam kimliğinizi kontrol etme</h3>
+<p>Android cihazınızda <em>Ayarlar → Güvenlik ve gizlilik → Diğer gizlilik ayarları → Reklamlar</em> bölümünden reklam kimliğinizi sıfırlayabilir veya tamamen silebilirsiniz.</p>
+
+<h2>7. Üçüncü taraf hizmetler</h2>
+
+<div class="tablewrap">
+<table>
+  <thead>
+    <tr><th>Hizmet</th><th>Amaç</th><th>Gizlilik politikası</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Google AdMob</td><td>Reklam gösterimi (yalnızca ücretsiz sürüm)</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
+    <tr><td>Google Play Billing</td><td>Abonelik satın alma</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
+    <tr><td>RevenueCat</td><td>Abonelik durumunun takibi</td><td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></td></tr>
+    <tr><td>Supabase</td><td>Hesap girişi ve bulut yedeği (isteğe bağlı)</td><td><a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>8. Çocuklar</h2>
+
+<p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve bilerek çocuklardan veri toplamaz.</p>
+
+<h2>9. Verilerinizi silme</h2>
+
+<ul>
+  <li><strong>Cihazdaki veriler:</strong> Uygulamayı kaldırdığınızda tamamen silinir. Ayrıca <em>Ayarlar → Uygulamalar → Paradar → Depolama → Verileri temizle</em> ile de silebilirsiniz.</li>
+  <li><strong>Hesabınız ve buluttaki veriler:</strong> Hesabınızın ve buluttaki tüm kayıtlarınızın silinmesini aşağıdaki e-posta adresinden talep edebilirsiniz. Talepler en geç 30 gün içinde sonuçlandırılır ve sonuç size bildirilir.</li>
+  <li><strong>Reklam verileri:</strong> Google tarafından kendi saklama politikalarına göre yönetilir; silme talepleri Google'a iletilmelidir.</li>
+</ul>
+
+<h2>10. Haklarınız</h2>
+
+<p>KVKK ve GDPR kapsamında; verilerinize erişme, düzeltilmesini isteme, silinmesini isteme ve bir kopyasını talep etme haklarına sahipsiniz. Uygulamada dosya olarak dışa aktarma özelliği bulunmamaktadır; buluttaki verilerinizin bir kopyasını istiyorsanız aşağıdaki adrese yazmanız yeterlidir.</p>
+
+<h2>11. Politikadaki değişiklikler</h2>
+
+<p>Bu politika zaman zaman güncellenebilir. Değişiklik yapıldığında bu sayfadaki "Son güncelleme" tarihi yenilenir.</p>
+
+<h2>12. İletişim</h2>
+
+<p>Gizlilikle ilgili soru, talep veya şikâyetleriniz için:<br>
+<a href="mailto:omyardim@gmail.com">omyardim@gmail.com</a></p>
+
+</section>
+
+<hr class="sep">
+
+<section id="en" lang="en">
+
+<header style="border-bottom:0;padding-bottom:0;margin-bottom:1.5rem;">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Application ID: <code>com.yunusyardim.paradar</code><br>
+  Last updated: August 18, 2026</p>
+</header>
+
+<p class="lede">Paradar is a mobile app that records your income, expenses, debts, and investments, and shows how your money will behave over the coming days. This policy explains how the app handles your data.</p>
+
+<div class="callout">
+  <p><strong>Summary:</strong> Your financial records are stored only on your own device by default. You can use the app without creating an account. Your data is sent to a server <em>only</em> if you have a Pro subscription <em>and</em> you have turned cloud backup on yourself. We never connect to your bank; every figure in the app is something you entered manually.</p>
+</div>
+
+<h2>1. Data stored on your device</h2>
+
+<p>What you enter is kept in a local database (SQLite) in your device's own storage:</p>
+<ul>
+  <li>Account and debt details: name, type, balance, due day, loan instalment plan</li>
+  <li>Income and expense records: amount, date, description, category</li>
+  <li>Recurring income and expenses (rent, bills, salary, instalments)</li>
+  <li>Investment positions and trading records</li>
+  <li>App preferences and subscription state</li>
+</ul>
+
+<div class="callout">
+  <p><strong>There is no bank integration.</strong> The app does not connect to any bank, payment institution, or financial service. It never asks for or reads card numbers, banking credentials, or statements. Every figure you see is one you entered yourself.</p>
+</div>
+
+<p>Unless you enable cloud backup, this data <strong>never leaves your device</strong>. Uninstalling the app deletes the database.</p>
+
+<h2>2. Creating an account (optional)</h2>
+
+<p>You can use the app fully without an account. An account is needed only for:</p>
+<ul>
+  <li>Carrying your subscription across devices (a subscription bought on Android also applying on your iPhone)</li>
+  <li>Enabling cloud backup</li>
+</ul>
+
+<p>The only personal information stored when you create an account is your <strong>email address</strong>. Your password is stored irreversibly hashed on the server and cannot be read by us or anyone else. Authentication is provided by <strong>Supabase</strong>.</p>
+
+<h2>3. Cloud backup (optional, Pro only)</h2>
+
+<p>Cloud backup does not run unless <strong>both</strong> conditions are met:</p>
+<ol>
+  <li>You have an active Pro subscription</li>
+  <li>You have turned backup on <strong>yourself</strong> inside the app</li>
+</ol>
+
+<p>Free users' financial data is never sent to the server under any circumstances. Even with a Pro subscription, your data stays on your device until you enable backup.</p>
+
+<p>When enabled, the following are copied to your account: ledgers, accounts and debts, categories, income and expense entries, recurring rules, the payment calendar, investment positions, and trading records.</p>
+
+<p>The following are <strong>never</strong> sent to the server: market prices, inflation data, and device-specific settings.</p>
+
+<p>Server-side data is protected by database Row Level Security: each user can access only their own rows. Data is hosted on Supabase Inc. infrastructure and may reside on servers outside Türkiye. Transfers are encrypted with TLS.</p>
+
+<h2>4. Subscription</h2>
+
+<p>Pro is purchased through Google Play. The app never sees or stores your payment details; payment is handled entirely by Google.</p>
+
+<p><strong>RevenueCat</strong> is used to track subscription status. Information sent to RevenueCat: purchase receipt data, subscription start/end dates, device and app version, and — if you are signed in — your account's user identifier. That identifier is what allows your subscription to be recognised on a different phone.</p>
+
+<h2>5. Permissions</h2>
+
+<div class="tablewrap">
+<table>
+  <thead>
+    <tr><th>Permission</th><th>Used for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Loading ads, verifying the subscription, and cloud backup (if you enabled it)</td></tr>
+    <tr><td><code>AD_ID</code> and ad services permissions</td><td>Google AdMob access to the advertising identifier</td></tr>
+    <tr><td><code>BILLING</code></td><td>Purchasing the subscription through Google Play</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>The app does not access your contacts, location, camera, photos, microphone, calendar, or files.</p>
+
+<h2>6. Advertising and third-party data collection</h2>
+
+<p>The free version displays ads through <strong>Google AdMob</strong>. Pro subscribers see no ads. The Google Mobile Ads SDK collects data itself in order to serve and measure ads. According to Google's official disclosure, the following data is collected and shared:</p>
+
+<div class="tablewrap">
+<table>
+  <thead>
+    <tr><th>Data type</th><th>Description</th><th>Purpose</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>IP address</td><td>May be used to estimate the device's general location</td><td>Advertising, analytics, fraud prevention</td></tr>
+    <tr><td>User product interactions</td><td>Interactions such as ad impressions and clicks</td><td>Advertising, analytics, fraud prevention</td></tr>
+    <tr><td>Diagnostic information</td><td>Performance data such as app launch time, hang rate, energy usage</td><td>Analytics, debugging</td></tr>
+    <tr><td>Advertising ID</td><td>A resettable advertising identifier assigned to the device</td><td>Advertising, analytics</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p><strong>Your financial records are not shared with the ad network.</strong> AdMob has no access to the amounts, accounts, or spending categories you enter.</p>
+
+<p>Users in the European Union and the United Kingdom are asked for consent through Google's User Messaging Platform before ads are shown. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">how AdMob uses data</a>.</p>
+
+<h3>Controlling your advertising ID</h3>
+<p>On your Android device you can reset or delete your advertising ID under <em>Settings → Security &amp; privacy → More privacy settings → Ads</em>.</p>
+
+<h2>7. Third-party services</h2>
+
+<div class="tablewrap">
+<table>
+  <thead>
+    <tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Google AdMob</td><td>Serving ads (free version only)</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
+    <tr><td>Google Play Billing</td><td>Subscription purchases</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
+    <tr><td>RevenueCat</td><td>Subscription status tracking</td><td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></td></tr>
+    <tr><td>Supabase</td><td>Account sign-in and cloud backup (optional)</td><td><a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>8. Children</h2>
+
+<p>The app is not directed at children under 13 and does not knowingly collect data from children.</p>
+
+<h2>9. Deleting your data</h2>
+
+<ul>
+  <li><strong>On-device data:</strong> Fully removed when you uninstall the app. You can also clear it via <em>Settings → Apps → Paradar → Storage → Clear data</em>.</li>
+  <li><strong>Your account and cloud data:</strong> You can request deletion of your account and all cloud records at the email address below. Requests are completed within 30 days at the latest and the outcome is confirmed to you.</li>
+  <li><strong>Ad data:</strong> Managed by Google under its own retention policies; deletion requests must be directed to Google.</li>
+</ul>
+
+<h2>10. Your rights</h2>
+
+<p>Under GDPR and Türkiye's KVKK you have the right to access your data, request correction or deletion, and request a copy. The app has no file export feature; if you would like a copy of your cloud data, simply write to the address below.</p>
+
+<h2>11. Changes to this policy</h2>
+
+<p>This policy may be updated from time to time. When it changes, the "Last updated" date on this page is revised.</p>
+
+<h2>12. Contact</h2>
+
+<p>For privacy questions, requests, or complaints:<br>
+<a href="mailto:omyardim@gmail.com">omyardim@gmail.com</a></p>
+
+</section>
+
+<footer>
+  <p>Paradar · <code>com.yunusyardim.paradar</code></p>
+  <p><a href="../">← Tüm gizlilik politikaları / All privacy policies</a></p>
+</footer>
+
+</div>
+</body>
+</html>
