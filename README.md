@@ -40,17 +40,22 @@ Ornek: `paradar/hesap-silme/`
 
 ## Yayindaki politikalar
 
-| Uygulama | Paket adi | URL |
-|---|---|---|
-| Dogum Gunu Takibi | `com.ncosy.birthdaylist` | https://ncosy.github.io/privacy/birthday-tracker/ |
-| Kac Gun Kaldi - Gun Sayaci | `com.ncosy.mysayac` | https://ncosy.github.io/privacy/days-left-countdown/ |
-| Kac Gun Oldu | `com.ncosy.kacgun` | https://ncosy.github.io/privacy/days-since-counter/ |
-| Evet Hayir | `com.evethayirduz` | https://ncosy.github.io/privacy/yes-no-decider/ |
-| Karar Carki | `com.evethayircark` | https://ncosy.github.io/privacy/decision-wheel/ |
-| Mizika | `com.charmonicam` | https://ncosy.github.io/privacy/harmonica/ |
-| Notlarim | `com.mynotesapp` | https://ncosy.github.io/privacy/my-notes/ |
-| Harcama Takibi | `ncosy.harcamalistesi` | https://ncosy.github.io/privacy/expense-tracker/ |
-| Paradar | `com.letworktech.paradar` | https://ncosy.github.io/privacy/paradar/ |
+Adlar magaza girislerindeki adlarla birebir ayni tutulur. Her uygulamanin
+**iki paket adi** vardir: Play'deki Android paketi ile App Store'daki iOS
+bundle kimligi farklidir (Paradar haric). Ayni gizlilik sayfasi iki platform
+icin de kullanilir.
+
+| Uygulama | Android | iOS | URL |
+|---|---|---|---|
+| Dogum Gunu Takibi & Burc | `com.ncosy.birthdaylist` | `com.letworktech.birthdaylist` | https://ncosy.github.io/privacy/birthday-tracker/ |
+| Kac Gun Kaldi - Gun Sayaci | `com.ncosy.mysayac` | `com.letworktech.kacgunkaldi` | https://ncosy.github.io/privacy/days-left-countdown/ |
+| Kac Gun Oldu - Gun Sayaci | `com.ncosy.kacgun` | `com.letworktech.kacgunoldu` | https://ncosy.github.io/privacy/days-since-counter/ |
+| Evet mi Hayir mi? - Karar | `com.evethayirduz` | `com.letworktech.evethayir` | https://ncosy.github.io/privacy/yes-no-decider/ |
+| Karar Carki - Cevir Karar Ver | `com.evethayircark` | `com.letworktech.kararcarki` | https://ncosy.github.io/privacy/decision-wheel/ |
+| Mizika - Harmonika Cal | `com.charmonicam` | `com.letworktech.mizika` | https://ncosy.github.io/privacy/harmonica/ |
+| Notlarim - Not Defteri | `com.mynotesapp` | `com.letworktech.notlarim` | https://ncosy.github.io/privacy/my-notes/ |
+| Harcama Takibi - Butce | `ncosy.harcamalistesi` | `com.letworktech.harcamatakibi` | https://ncosy.github.io/privacy/expense-tracker/ |
+| Paradar: Gelir Gider Takibi | `com.letworktech.paradar` | `com.letworktech.paradar` | https://ncosy.github.io/privacy/paradar/ |
 
 ## Yeni uygulama eklemek
 
